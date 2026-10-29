@@ -7,6 +7,51 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0-alpha.11](https://github.com/agentclientprotocol/agent-client-protocol/compare/schema-v2.0.0-alpha.10...schema-v2.0.0-alpha.11) - 2026-10-29
+
+### Added
+
+- *(unstable-v2)* remove JSON-RPC batching from v2 ([#2625](https://github.com/agentclientprotocol/agent-client-protocol/pull/2625))
+- *(unstable-v2)* add schema types for defined error data ([#2605](https://github.com/agentclientprotocol/agent-client-protocol/pull/2605))
+- *(unstable-v2)* accept other JSON values in elicitation content ([#2595](https://github.com/agentclientprotocol/agent-client-protocol/pull/2595))
+- *(unstable)* report subagent working directories ([#2593](https://github.com/agentclientprotocol/agent-client-protocol/pull/2593))
+
+### Fixed
+
+- *(unstable-v2)* encode the at-least-one-value rule for select options ([#2662](https://github.com/agentclientprotocol/agent-client-protocol/pull/2662))
+- *(unstable-v2)* match MCP's ISO 8601 lastModified ([#2661](https://github.com/agentclientprotocol/agent-client-protocol/pull/2661))
+- *(unstable)* use AbsolutePath for subagent cwd and additionalDirectories ([#2660](https://github.com/agentclientprotocol/agent-client-protocol/pull/2660))
+- *(unstable-v2)* require type and properties on elicitation requestedSchema ([#2645](https://github.com/agentclientprotocol/agent-client-protocol/pull/2645))
+- *(unstable-v2)* allow null error response ids in the generated schema ([#2634](https://github.com/agentclientprotocol/agent-client-protocol/pull/2634))
+- *(schema)* allow non-ISO currency units such as credits ([#2621](https://github.com/agentclientprotocol/agent-client-protocol/pull/2621))
+- *(unstable-v2)* make usage_update cost a patch field ([#2617](https://github.com/agentclientprotocol/agent-client-protocol/pull/2617))
+- *(schema)* mark SessionInfo.additionalDirectories as default-on-null ([#2571](https://github.com/agentclientprotocol/agent-client-protocol/pull/2571))
+
+### Other
+
+- *(schema)* an empty-string session/list cursor is valid ([#2673](https://github.com/agentclientprotocol/agent-client-protocol/pull/2673))
+- *(schema)* ignore cancel_request for unknown or answered requests ([#2672](https://github.com/agentclientprotocol/agent-client-protocol/pull/2672))
+- *(unstable)* clean up the SystemPrompt.mode description ([#2668](https://github.com/agentclientprotocol/agent-client-protocol/pull/2668))
+- *(schema)* new entities start at protocol defaults, not Client defaults ([#2652](https://github.com/agentclientprotocol/agent-client-protocol/pull/2652))
+- *(schema)* git_patch paths match changes, including on Windows ([#2650](https://github.com/agentclientprotocol/agent-client-protocol/pull/2650))
+- *(schema)* align close's prompt rule and call pending prompts held ([#2648](https://github.com/agentclientprotocol/agent-client-protocol/pull/2648))
+- *(schema)* Clients must not send an empty prompt ([#2647](https://github.com/agentclientprotocol/agent-client-protocol/pull/2647))
+- *(schema)* require a boundary after a command name ([#2646](https://github.com/agentclientprotocol/agent-client-protocol/pull/2646))
+- *(schema)* require session/resume cwd to match the session ([#2640](https://github.com/agentclientprotocol/agent-client-protocol/pull/2640))
+- *(schema)* SessionInfo.additionalDirectories doesn't allow null ([#2638](https://github.com/agentclientprotocol/agent-client-protocol/pull/2638))
+- *(schema)* allow a normal response after $/cancel_request ([#2636](https://github.com/agentclientprotocol/agent-client-protocol/pull/2636))
+- *(unstable-v2)* scope end-turn Usage fields to the completed work ([#2630](https://github.com/agentclientprotocol/agent-client-protocol/pull/2630))
+- *(schema)* define AbsolutePath syntax and reject relative cwd ([#2629](https://github.com/agentclientprotocol/agent-client-protocol/pull/2629))
+- *(schema)* state request ID rules for a bidirectional connection ([#2622](https://github.com/agentclientprotocol/agent-client-protocol/pull/2622))
+- *(schema)* drop the v1 exclusion note from the v2 refusal stop reason ([#2619](https://github.com/agentclientprotocol/agent-client-protocol/pull/2619))
+- *(schema)* resume mcpServers is the complete Client-provided set ([#2614](https://github.com/agentclientprotocol/agent-client-protocol/pull/2614))
+- *(schema)* require session/resume cwd to match the session ([#2612](https://github.com/agentclientprotocol/agent-client-protocol/pull/2612))
+- *(schema)* define session/list cwd matching ([#2609](https://github.com/agentclientprotocol/agent-client-protocol/pull/2609))
+- *(schema)* specify slash command names and invocation ([#2598](https://github.com/agentclientprotocol/agent-client-protocol/pull/2598))
+- *(schema)* clarify authMethods obligations, terminal gating and auth/login errors ([#2589](https://github.com/agentclientprotocol/agent-client-protocol/pull/2589))
+- *(schema)* define declining a permission request and unknown option IDs ([#2582](https://github.com/agentclientprotocol/agent-client-protocol/pull/2582))
+- *(schema)* let cancelled cover stops the user chose through the Agent ([#2576](https://github.com/agentclientprotocol/agent-client-protocol/pull/2576))
+
 ## [2.0.0-alpha.10](https://github.com/agentclientprotocol/agent-client-protocol/compare/schema-v2.0.0-alpha.9...schema-v2.0.0-alpha.10) - 2026-10-27
 
 ### Added
